@@ -6,7 +6,7 @@ function App() {
         <button>+ New Chat</button>
         <ul className="history"></ul>
         <nav>
-          <p>Made by Patryk</p>
+          <p>Made by <a href="https://github.com/dedku" target="_blank" rel="noopener noreferrer">@Patryk</a></p>
         </nav>
       </section>
       <section className="main">
@@ -17,7 +17,7 @@ function App() {
         <div className="bottom-section">
           <div className="input-container">
             <input type="text" />
-            <div id="submit"></div>
+            <div id="submit">➢</div>
           </div>
           <p className="info">
           ChatGPT Mar 23 Version. Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts.
