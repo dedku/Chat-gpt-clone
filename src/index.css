@@ -3,7 +3,7 @@
 * {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    font: inherit;
+    font-size: 1.6rem;
 }
 
 /* CSS RESET */
@@ -26,6 +26,18 @@ blockquote,
 dl,
 dd {
     margin: 0;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 1.8rem;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
