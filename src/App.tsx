@@ -1,4 +1,23 @@
 function App() {
+  const getMesseges = async () => {
+    const options = {
+      method: "POST",
+      body: JSON.stringify({
+        message: "hello how are you?"
+      }),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }
+
+    try {
+        const response = await fetch('http://localhost:8000/completions', options)
+        const data = await response.json()
+        console.log(data)
+    } catch (error) {
+      console.error(error)
+    }
+  }
 
   return (
     <div className="app">
@@ -17,7 +36,7 @@ function App() {
         <div className="bottom-section">
           <div className="input-container">
             <input type="text" />
-            <div id="submit">➢</div>
+            <div id="submit" onClick={getMesseges}>➢</div>
           </div>
           <p className="info">
           ChatGPT Mar 23 Version. Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts.
